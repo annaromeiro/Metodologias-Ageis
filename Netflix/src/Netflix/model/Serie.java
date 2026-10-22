@@ -1,0 +1,54 @@
+
+package Netflix.model;
+
+public class Serie extends Conteudo {
+
+    private int temporadas;
+
+    public Serie(int id, String titulo, String sinopse,
+                 int ano, String genero, int temporadas) {
+
+        super(id, titulo, sinopse, ano, genero);
+        this.temporadas = temporadas;
+    }
+
+    public int getTemporadas() {
+        return temporadas;
+    }
+
+    @Override
+    public void exibirDetalhes() {
+
+        System.out.println("\n===== FICHA TÉCNICA DA SÉRIE =====");
+
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Sinopse: " + getSinopse());
+        System.out.println("Ano de lançamento: " + getAno());
+        System.out.println("Gênero: " + getGenero());
+        System.out.println("Temporadas: " + temporadas);
+
+        System.out.println("Elenco: " +
+                (getElenco().isBlank()
+                        ? "Não informado"
+                        : getElenco()));
+
+        System.out.println("Classificação indicativa: " +
+                (getClassificacaoIndicativa().isBlank()
+                        ? "Não informada"
+                        : getClassificacaoIndicativa()));
+
+        System.out.println("Imagem: " +
+                (getImagemUrl().isBlank()
+                        ? "Não disponível"
+                        : getImagemUrl()));
+
+        System.out.println("Trailer: " +
+                (getTrailerUrl().isBlank()
+                        ? "Não disponível"
+                        : getTrailerUrl()));
+
+        if (isDestaque()) {
+            System.out.println("★ CONTEÚDO EM DESTAQUE");
+        }
+    }
+}
