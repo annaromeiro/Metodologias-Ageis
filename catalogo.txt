@@ -1,0 +1,2 @@
+FILME;1;Interestelar;Uma viagem pelo espaço e pelo tempo.;2014;Ficção científica;169;Matthew McConaughey, Anne Hathaway, Jessica Chastain;10 anos;imagens/interestelar.jpg;https://www.youtube.com/watch?v=i6avfCqKcQo;true
+SERIE;2;Stranger Things;Mistérios em uma pequena cidade.;2016;Ficção científica;4;Millie Bobby Brown, Finn Wolfhard, David Harbour;16 anos;imagens/stranger-things.jpg;https://www.youtube.com/watch?v=mnd7sFt5c3A;false
