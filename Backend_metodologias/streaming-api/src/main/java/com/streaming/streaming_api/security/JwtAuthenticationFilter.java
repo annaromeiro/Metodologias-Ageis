@@ -66,6 +66,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                         .setAuthentication(autenticacao);
 
             } catch (Exception e) {
+                System.err.println("ERRO AO VALIDAR JWT: " + e.getMessage());
+                e.printStackTrace();
                 SecurityContextHolder.clearContext();
             }
         }
